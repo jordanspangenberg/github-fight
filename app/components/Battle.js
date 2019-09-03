@@ -145,7 +145,15 @@ export default class Battle extends React.Component {
     const { playerOne, playerTwo, battle } = this.state;
 
     if (battle === true) {
-      return <Results playerOne={playerOne} playerTwo={playerTwo} />;
+      return (<Results 
+        playerOne={playerOne} 
+        playerTwo={playerTwo} 
+        onReset={() => this.setState({
+          playerOne: null,
+          playerTwo: null,
+          battle: false,
+        })}
+        />)
     }
     return (
       <React.Fragment>
@@ -191,4 +199,10 @@ export default class Battle extends React.Component {
       </React.Fragment>
     );
   }
+}
+
+Results.propTypes = {
+  playerOne: PropTypes.string.isRequired,
+  playerTwo: PropTypes.string.isRequired,
+  onReset: PropTypes.func.isRequired
 }
