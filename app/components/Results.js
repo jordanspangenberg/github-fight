@@ -58,7 +58,7 @@ export default class Results extends React.Component {
                 Score: {winner.score.toLocaleString()}
             </h4>
             <h2 className='center-text'>
-                <a className='link href={winner.profile.html_url' >
+                <a className='link' href={winner.profile.html_url} >
                     {winner.profile.login}
                 </a>
             </h2>
@@ -103,7 +103,7 @@ export default class Results extends React.Component {
                 Score: {loser.score.toLocaleString()}
             </h4>
             <h2 className='center-text'>
-                <a className='link href={loser.profile.html_url' >
+                <a className='link' href={loser.profile.html_url} >
                     {loser.profile.login}
                 </a>
             </h2>
