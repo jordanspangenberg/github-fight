@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDom from 'react-dom'
-import './index.css'
-import Popular from './components/Popular'
-import Battle from './components/Battle'
+import React from "react";
+import ReactDom from "react-dom";
+import "./index.css";
+import Popular from "./components/Popular";
+import Battle from "./components/Battle";
 
 // Component
 // State
@@ -13,17 +13,13 @@ import Battle from './components/Battle'
 // Separation of Concerns!
 
 class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <Popular />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <Popular />
+      </div>
+    );
+  }
 }
 
-
-ReactDom.render(
-    <App />,
-    document.getElementById('app')
-)
+ReactDom.render(<App />, document.getElementById("app"));
