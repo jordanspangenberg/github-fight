@@ -14,7 +14,12 @@ export default function Nav() {
         <nav className="row space-between">
           <ul className="row nav">
             <li>
-              <NavLink exact to="/" activeStyle={activeStyle} className="nav-link">
+              <NavLink
+                exact
+                to="/"
+                activeStyle={activeStyle}
+                className="nav-link"
+              >
                 Popular
               </NavLink>
             </li>
