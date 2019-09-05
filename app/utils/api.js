@@ -1,5 +1,7 @@
-import { id, sec } from "../../auth";
 const params = `?client_id=${id}&client_secret=${sec}`;
+
+const id = process.env.id;
+const sec = process.env.sec;
 
 function getErrorMsg(message, username) {
   if (message === "Not Found") {
