@@ -46,6 +46,10 @@ li {
   color: inherit;
 }
 
+.nav li {
+  margin-right: 10px;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap
@@ -270,3 +274,7 @@ li {
   background: #292929;
   color: #4a4a4a;
 } 
+
+.space-between {
+  justify-content: space-between
+}
